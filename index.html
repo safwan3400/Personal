@@ -85,7 +85,7 @@
       <div class="row g-xl-5">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100"
           data-aos-duration="1000">
-          <div class="img img-about" style="background-image:url(images/xabout.jpg.pagespeed.ic.3XzwTlBUg1.webp)">
+          <div class="img img-about" style="background-image:url(images/xabout.jpg.pagespeed.ic.3XzwTlBUg1.webp);">
           </div>
         </div>
         <div class="col-md-6 heading-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -539,7 +539,7 @@
                         <div class="form-group">
                           <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                           <h5 id="namecheck" style="color: red;">
-                            **Username is missing
+                            **Name is missing
                           </h5>
                           <small id="namecheck1" class="form-text
                 text-muted">
@@ -767,9 +767,9 @@
     function validateName() {
       let nameValue = $('#name').val();
       var re = /^[A-Za-z]+$/;
-      if(re.test(nameValue) == true){
+      if (re.test(nameValue) == true) {
         return true;
-      }else if (nameValue.length == '') {
+      } else if (nameValue.length == '') {
         $('#namecheck').show();
         return false;
       } else {
@@ -777,7 +777,7 @@
         $('#namecheck1').show();
         return false;
       }
-      
+
     }
     function validateSubject() {
       let subjectValue = $('#subject').val();
@@ -812,7 +812,6 @@
       }
 
     }
-    // Validate Email
 
 
     $("#submit-form").submit((e) => {
